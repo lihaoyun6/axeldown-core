@@ -1,0 +1,58 @@
+*{margin:0;padding:0;font-family: Arial;}
+body{padding:0;font-size:12px;}
+
+.clear{clear:both;}
+.hidden{display:none;}
+
+table#list{border-collapse:collapse;}
+table#list td{padding:5px 5px 5px 10px;}
+table#list th{color:#333;font-size:14px;padding:5px;text-shadow: 1px 1px 0 #AAA;}
+table#list thead{cursor:pointer;background-color:#CCCCCC;}
+table#list tbody tr.even{background-color:#DDDDDD;}
+table#list tbody tr.odd{background-color:#F3F3F3;}
+table#list tbody tr.url{background-color:#FFFFFF;display:none;}
+table#list tbody tr.completed td.filename{font-weight:bold;}
+table#list tbody tr.downloading{color:green;}
+table#list tbody tr.paused{color:gray;}
+table#list tbody tr.error{color:red;}
+table#list tbody tr td.center{text-align:center;}
+table#list tbody tr td.filename{cursor:pointer;}
+table#list tbody tr td.state.E{cursor:pointer;}
+
+#toolbar{padding-left:5px;}
+#toolbar button{float:left;margin-right:5px;}
+#msg{color:red;font-size:14px;padding:0 10px 0 30px;border-radius:3px;text-align:center;display:none;float:left;position:relative;left:10px;top:3px;height:27px;line-height:27px;}
+button{
+    background: -moz-linear-gradient(center top , #EDEDED 5%, #DFDFDF 100%) repeat scroll 0 0 #EDEDED;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: #555;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 15px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    margin:3px 0;
+    cursor:pointer;
+}
+
+#create{z-index:1000;position:absolute;border:7px solid gray;border-radius:10px;display:none;background:white;}
+#create .actions{float:right;padding-right:5px;padding-bottom:3px;}
+#create button{margin-left:5px;}
+
+#cconfig{z-index:1000;position:absolute;border:7px solid gray;border-radius:10px;display:none;background:white;}
+#cconfig .actions{float:right;padding-right:5px;padding-bottom:3px;}
+#cconfig button{margin-left:5px;}
+
+#background{left:0;top:0;position:absolute;display:none;}
+#list thead td{font-weight:bold;}
+
+input[type="text"]{height:20px;line-height:20px;}
+
+div.progress{background:#99CCCC;height:25px;line-height:25px;}
+span.filename{padding:0 10px;float:left;}
+#states{float:right;margin-top:14px;margin-right:5px;}
+#states span{cursor:pointer;padding:5px 10px 5px 10px;background:#E5E5E5;border-radius:3px 3px 0 0;font-weight:bold;}
+#states span.current{background:#CCC;}
