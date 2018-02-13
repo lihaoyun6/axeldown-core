@@ -19,7 +19,7 @@ $ ./build.sh
 ``` bash
 $ easy_install web.py
 ```
-使用macOS等平台, 必要时请使用sudo安装 
+在macOS等平台, 必要时请使用sudo安装 
 
 ``` bash
 $ sudo easy_install web.py
