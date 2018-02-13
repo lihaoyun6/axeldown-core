@@ -1,0 +1,4 @@
+133c133
+< 	conf->reconnect_delay		= 20;
+---
+> 	conf->reconnect_delay		= 5;

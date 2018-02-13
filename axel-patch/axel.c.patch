@@ -1,0 +1,96 @@
+33a34,35
+> static int read_max_speed_from_http_api( int tid );
+> 
+35a38,54
+> static read_max_speed_from_http_api( int tid )
+> {
+>   char *json;
+>   char *tpl = "{\"action\":\"maxspeed\", \"tid\":%d}";
+>   int tidlen = 0;
+>   if (tid < 10) tidlen = 1;
+>   else if (tid < 100) tidlen = 2;
+>   else if (tid < 1000) tidlen = 3;
+>   else tid = 4;
+>   json = (char *)malloc(tidlen+strlen(tpl)-1);
+>   sprintf(json, tpl, tid);
+>   char *c = (char *)malloc(10);
+>   int ret = http_post("localhost", 8080, "/api", json, c);
+>   int max_speed = atoi(c);
+>   return max_speed;
+> }
+> 
+50c69,73
+< 	if( axel->conf->max_speed > 0 )
+---
+> 
+>   // Read max_speed from python http api
+>   int max_speed = read_max_speed_from_http_api( axel->conf->tid );
+> 
+> 	if( max_speed > 0 )
+52c75
+< 		if( (float) axel->conf->max_speed / axel->conf->buffer_size < 0.5 )
+---
+> 		if( (float) max_speed / axel->conf->buffer_size < 0.5 )
+56c79
+< 			axel->conf->buffer_size = axel->conf->max_speed;
+---
+> 			axel->conf->buffer_size = max_speed;
+58c81
+< 		axel->delay_time = (int) ( (float) 1000000 / axel->conf->max_speed * axel->conf->buffer_size * axel->conf->num_connections );
+---
+> 		axel->delay_time = (int) ( (float) 1000000 / max_speed * axel->conf->buffer_size * axel->conf->num_connections );
+125,126c148,149
+< 		if( axel->conf->verbose > 0 )
+< 			axel_message( axel, _("File size: %lld bytes"), axel->size );
+---
+> //		if( axel->conf->verbose > 0 )
+> //			axel_message( axel, _("File size: %lld bytes"), axel->size );
+139a163
+>   int r;
+143c167
+< 		axel_message( axel, _("Opening output file %s"), axel->filename );
+---
+> //		axel_message( axel, _("Opening output file %s"), axel->filename );
+160c184
+< 		read( fd, &axel->conf->num_connections, sizeof( axel->conf->num_connections ) );
+---
+> 		r = read( fd, &axel->conf->num_connections, sizeof( axel->conf->num_connections ) );
+167c191
+< 		read( fd, &axel->bytes_done, sizeof( axel->bytes_done ) );
+---
+> 		r = read( fd, &axel->bytes_done, sizeof( axel->bytes_done ) );
+169c193
+< 			read( fd, &axel->conn[i].currentbyte, sizeof( axel->conn[i].currentbyte ) );
+---
+> 			r = read( fd, &axel->conn[i].currentbyte, sizeof( axel->conn[i].currentbyte ) );
+171c195
+< 		axel_message( axel, _("State file found: %lld bytes downloaded, %lld to go."),
+---
+> /*		axel_message( axel, _("State file found: %lld bytes downloaded, %lld to go."),
+172a197
+> */
+208c233
+< 				write( axel->outfd, buffer, min( j, axel->conf->buffer_size ) );
+---
+> 				r = write( axel->outfd, buffer, min( j, axel->conf->buffer_size ) );
+234,235c259,260
+< 	if( axel->conf->verbose > 0 )
+< 		axel_message( axel, _("Starting download") );
+---
+> //	if( axel->conf->verbose > 0 )
+> //		axel_message( axel, _("Starting download") );
+431a457,460
+> 
+>   // Read max_speed from api
+>   int max_speed = read_max_speed_from_http_api( axel->conf->tid );
+> 
+514,515c543,544
+< 	write( fd, &axel->conf->num_connections, sizeof( axel->conf->num_connections ) );
+< 	write( fd, &axel->bytes_done, sizeof( axel->bytes_done ) );
+---
+> 	int r = write( fd, &axel->conf->num_connections, sizeof( axel->conf->num_connections ) );
+> 	r = write( fd, &axel->bytes_done, sizeof( axel->bytes_done ) );
+518c547
+< 		write( fd, &axel->conn[i].currentbyte, sizeof( axel->conn[i].currentbyte ) );
+---
+> 		r = write( fd, &axel->conn[i].currentbyte, sizeof( axel->conn[i].currentbyte ) );

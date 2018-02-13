@@ -1,0 +1,69 @@
+487c487
+< 	int i,j=0;
+---
+> 	int i;
+490,491c490,491
+< 	printf("\r[%3ld%%] [", min(100,(long)(done*100./total+.5) ) );
+< 		
+---
+>   putchar(':');
+> 	printf("%lld|%lld|", done, total);
+494,509c494,496
+< 		for(;j<((double)axel->conn[i].currentbyte/(total+1)*50)-1;j++)
+< 			putchar('.');
+< 
+< 		if(axel->conn[i].currentbyte<axel->conn[i].lastbyte)
+< 		{
+< 			if(now <= axel->conn[i].last_transfer + axel->conf->connection_timeout/2 )
+< 				putchar(i+'0');
+< 			else
+< 				putchar('#');
+< 		} else 
+< 			putchar('.');
+< 
+< 		j++;
+< 		
+< 		for(;j<((double)axel->conn[i].lastbyte/(total+1)*50);j++)
+< 			putchar(' ');
+---
+> 		printf("%lld", axel->conn[i].currentbyte);
+> 		if (i < axel->conf->num_connections-1)
+> 			putchar(',');
+511,518c498
+< 	
+< 	if(axel->bytes_per_second > 1048576)
+< 		printf( "] [%6.1fMB/s]", (double) axel->bytes_per_second / (1024*1024) );
+< 	else if(axel->bytes_per_second > 1024)
+< 		printf( "] [%6.1fKB/s]", (double) axel->bytes_per_second / 1024 );
+< 	else
+< 		printf( "] [%6.1fB/s]", (double) axel->bytes_per_second );
+< 	
+---
+>   printf( "|%d|", axel->bytes_per_second );
+521,531c501,504
+< 		int seconds,minutes,hours,days;
+< 		seconds=axel->finish_time - now;
+< 		minutes=seconds/60;seconds-=minutes*60;
+< 		hours=minutes/60;minutes-=hours*60;
+< 		days=hours/24;hours-=days*24;
+< 		if(days)
+< 			printf(" [%2dd%2d]",days,hours);
+< 		else if(hours)
+< 			printf(" [%2dh%02d]",hours,minutes);
+< 		else
+< 			printf(" [%02d:%02d]",minutes,seconds);
+---
+>     if (axel->finish_time > now)
+>       printf("%lf|", axel->finish_time - now);
+>     else
+>       printf("0|");
+532a506,514
+>   else
+>     printf("0|");
+> 
+> 	struct timeval tim;
+> 	gettimeofday(&tim, NULL);
+> 	double t1=tim.tv_sec+(tim.tv_usec/1000000.0);
+> 
+> 	printf("%f", t1);
+>   putchar('\n');
