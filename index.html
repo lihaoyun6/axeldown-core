@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/main.js"></script>
+<title>Axeldown</title>
+</head>
+<body>
+<div id="wrap">
+  <div id="toolbar">
+    <button class="create">✚</button>
+    <button class="resume">▶</button>
+    <button class="pause">❘❘</button>
+    <button class="remove">✕</button>
+    <button onclick="location.reload();">↻</button>
+    <button class="cconfig">设置</button>
+    <div id="msg">
+    </div>
+    <div id="states">
+      <span class="A current">所有任务</span>
+      <span class="D">下载中</span>
+      <span class="C">已完成</span>
+      <span class="P">暂停中</span>
+      <span class="W">等待中</span>
+      <span class="E">发生错误</span>
+      <div class="clear">
+      </div>
+    </div>
+    <div class="clear">
+    </div>
+  </div>
+  <table id="list" width="100%">
+  <thead>
+  <tr>
+    <th width="50" class="select">
+      选中
+    </th>
+    <th width="50" class="state">
+      状态
+    </th>
+    <th class="filename">
+      文件名
+    </th>
+    <th width="120" class="done">
+      进度
+    </th>
+    <th width="50" class="speed">
+      速度
+    </th>
+    <th width="80" class="eta">
+      剩余时间
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  </table>
+</div>
+<div id="create">
+  <table>
+  <tr>
+    <th>
+      下载地址
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <textarea name="url" cols="70" rows="5" style="width:410px;"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      *线程数
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <input type="text" name="thsize" id="default_thread_size1" size="70" style="width:410px;">
+    </td>
+  </tr>
+  <tr>
+    <th>
+      *文件名
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <input type="text" name="filename" size="70" style="width:410px;">
+    </td>
+  </tr>
+  <tr>
+    <th>
+      *下载目录
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <input type="text" name="downloads" id="downloads1" size="70" style="width:410px;">
+    </td>
+  </tr>
+  <th>
+    *User Agent
+  </th>
+</tr>
+<tr>
+  <td>
+    <input type="text" name="ua" id="user_agent1" size="70" style="width:410px;">
+  </td>
+</tr>
+<tr>
+  <th>
+    *请求头
+  </th>
+</tr>
+<tr>
+  <td>
+    <textarea name="headers" cols="70" rows="3" style="width:410px;"></textarea>
+  </td>
+</tr>
+</table>
+<table>
+<tr>
+  <th>
+    建立任务后立即下载
+  </th>
+  <td>
+    <input name="immediately" type="checkbox" checked>
+  </td>
+</tr>
+</table>
+<div class="actions">
+  <button class="cancel">取消</button>
+  <button class="create">创建</button>
+</div>
+</div>
+<div id="cconfig">
+<table>
+<tr>
+  <th>
+    User-Agent
+  </th>
+</tr>
+<tr>
+  <td>
+    <textarea name="cua" id="user_agent" cols="70" rows="5" style="width:410px;"></textarea>
+  </td>
+</tr>
+<tr>
+  <th>
+    最大下载速度
+  </th>
+</tr>
+<tr>
+  <td>
+    <input type="text" name="cmaxspeed" id="total_maxspeed" size="70" style="width:410px;">
+  </td>
+</tr>
+<tr>
+  <th>
+    默认下载位置
+  </th>
+</tr>
+<tr>
+  <td>
+    <input type="text" name="cpath" id="downloads" size="70" style="width:410px;">
+  </td>
+</tr>
+<tr>
+  <th>
+    默认下载线程数
+  </th>
+</tr>
+<tr>
+  <td>
+    <input type="text" name="cthread" id="default_thread_size" size="70" style="width:410px;">
+  </td>
+</tr>
+<th>
+  最大同时任务数
+</th>
+</tr>
+<tr>
+<td>
+  <input type="text" name="cqueue" id="task_queue_size" size="70" style="width:410px;">
+</td>
+</tr>
+<tr>
+<th>
+  缓冲区大小
+</th>
+</tr>
+<tr>
+<td>
+  <input type="text" name="cbuffer" id="buffer_size" size="70" style="width:410px;"></textarea>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+  强制覆盖已存在文件
+</th>
+<td>
+  <input name="cforce" id="force_download" type="checkbox">
+</td>
+</tr>
+</table>
+<div class="actions">
+<button class="cancel">取消</button><button class="save">保存</button>
+</div>
+</div>
+<div id="background">
+</div>
+</body>
+</html>
