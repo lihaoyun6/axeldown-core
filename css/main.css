@@ -46,6 +46,10 @@ button{
 #cconfig .actions{float:right;padding-right:5px;padding-bottom:3px;}
 #cconfig button{margin-left:5px;}
 
+#donate{z-index:1000;position:absolute;border:7px solid gray;border-radius:10px;display:none;background:white;}
+#donate .actions{float:right;padding-right:5px;padding-bottom:3px;}
+#donate button{margin-left:5px;}
+
 #background{left:0;top:0;position:absolute;display:none;}
 #list thead td{font-weight:bold;}
 
