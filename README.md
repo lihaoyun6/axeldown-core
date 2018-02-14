@@ -42,4 +42,4 @@ $ python axeldown.py 2333
 
 ## 打赏
 
-![image][https://raw.githubusercontent.com/lihaoyun6/web/master/alipay.png]
+![image][donate/alipay.png]
