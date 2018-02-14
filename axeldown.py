@@ -29,7 +29,7 @@ class Router(object):
     
     def GET(self, uri):
         dirs = uri.split('/')
-        if dirs[0] in ['', 'js', 'css', 'img', 'favicon.ico']:
+        if dirs[0] in ['', 'js', 'css', 'img', 'favicon.ico', 'donate']:
             filename = uri
             if dirs[0] == '':
                 filename = 'index.html'
