@@ -22,5 +22,5 @@ cp axel ../../
 cd ../../
 rm -rf build
 rm -rf axel-patch
-rm axel-2.4.tar.bz2
+rm axel-2.5.tar.gz
 rm $0
