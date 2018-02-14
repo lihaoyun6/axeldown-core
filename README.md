@@ -42,4 +42,5 @@ $ python axeldown.py 2333
 
 ## 打赏
 
-![image][donate/alipay.png]
+![](donate/alipay.png)
+![](donate/wechatpay.png)
