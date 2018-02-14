@@ -18,11 +18,6 @@ $ ./build.sh
 因为项目基于web.py模块提供服务, 故需要先安装web.py
 
 ``` bash
-$ easy_install web.py
-```
-在macOS等平台, 必要时请使用sudo安装 
-
-``` bash
 $ sudo easy_install web.py
 ```
 
