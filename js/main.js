@@ -77,6 +77,7 @@ function api(action, data, callback) {
 function init() {
   $('#toolbar .create').click(open_create_dialog);
   $('#toolbar .cconfig').click(open_cconfig_dialog);
+  $('#toolbar .donate').click(open_donate_dialog);
   $('#create button.create').click(function(){
     var urls = $.trim($('#create textarea[name="url"]').val());
     if (!urls) {
@@ -178,6 +179,7 @@ function init() {
   });
   $('#create button.cancel').click(close_create_dialog);
   $('#cconfig button.cancel').click(close_cconfig_dialog);
+  $('#donate button.cancel').click(close_donate_dialog);
   $('#list td.filename').live('click', function(){
     if($(this).parent().next().css('display') != 'none') {
       $(this).parent().next().hide('fast');
@@ -366,6 +368,27 @@ function open_cconfig_dialog() {
   rconfig();
 }
 
+function open_donate_dialog() {
+  var $d = $(document);
+  var ww = $d.width();
+  var wh = $d.height();
+
+  var $c = $('#donate');
+  var cw = $c.width();
+  var ch = $c.height()
+
+  var left = (ww - cw) / 2;
+  var top = (wh - ch) / 2;
+  if (left < 0)
+    left = 0;
+  if (top < 0)
+    top = 0;
+  $c.css({left:left,top:top,display:'block'});
+
+  $('#background').css({display:'block',width:ww,height:wh});
+  rconfig();
+}
+
 function close_create_dialog() {
   $('#create').hide();
   $('#background').hide();
@@ -373,6 +396,11 @@ function close_create_dialog() {
 
 function close_cconfig_dialog() {
   $('#cconfig').hide();
+  $('#background').hide();
+}
+
+function close_donate_dialog() {
+  $('#donate').hide();
   $('#background').hide();
 }
 
