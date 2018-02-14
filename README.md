@@ -9,7 +9,7 @@
 ``` bash
 $ git clone https://github.com/lihaoyun6/axeldown-core.git
 $ cd axeldown-core
-$ chmoe a+x build.sh
+$ chmod a+x build.sh
 $ ./build.sh
 ```
 
