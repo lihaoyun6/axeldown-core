@@ -4,8 +4,8 @@ rm -rf build
 mkdir -p build
 cd build
 echo '解压axel源码...'
-tar xf ../axel-2.4.tar.bz2
-axel=axel-2.4
+tar tar -xzvf ../axel-2.5.tar.gz
+axel=axel-2.5
 patch=../axel-patch
 echo '开始修补源码..'
 diff $axel/text.c $patch/text.c > $patch/text.c.patch
