@@ -37,5 +37,5 @@ $ python axeldown.py 2333
 
 ## 打赏
 
-![](donate/alipay.png)
-![](donate/wechatpay.png)
+<img src="donate/alipay.png" width = "300"alt="支付宝" align=center />
+<img src="donate/wechatpay.png" width = "300"alt="微信" align=center />
