@@ -36,6 +36,7 @@ $ python axeldown.py 2333
 启动服务后在浏览器中打开"<http://127.0.0.1:端口>"即可看到管理界面
 
 ## 打赏
-
-<img src="donate/alipay.png" width = "300"alt="支付宝" align=center />
-<img src="donate/wechatpay.png" width = "300"alt="微信" align=center />
+<div>
+<img src="donate/alipay.png" width = "200" alt="支付宝" align=center />
+<img src="donate/wechatpay.png" width = "200" alt="微信" align=center />
+</div>
