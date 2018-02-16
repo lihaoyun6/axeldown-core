@@ -20,8 +20,9 @@ make
 echo '清理临时目录...'
 cp axel ../../
 cd ../../
-rm -rf screenshot
-rm -rf build
-rm -rf axel-patch
-rm axel-2.5.tar.gz
+rm -rf ./screenshot
+rm -rf ./.MD
+rm -rf ./build
+rm -rf ./axel-patch
+rm ./axel-2.5.tar.gz
 rm $0
