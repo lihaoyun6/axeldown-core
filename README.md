@@ -1,6 +1,8 @@
 # axeldown-core
 
-基于axel-webm的优化项目. 通过webui调用axel进行下载
+基于axel-webm的优化项目. 通过webui调用axel进行下载. 支持http与ftp下载, 支持多线程加速百度云下载  
+
+![preview](screenshot/preview.jpg)  
 
 ## 使用方法
 
