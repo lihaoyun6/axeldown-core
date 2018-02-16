@@ -28,4 +28,4 @@
 
 默认下载到当前用户的"下载"文件夹, 如需永久更改请使用"设置"按钮进行更改, "新建"界面设置下载目录仅对当前任务生效
 
-![dlinux](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/dmacos.jpg)
+![dmacos](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/dmacos.jpg)
