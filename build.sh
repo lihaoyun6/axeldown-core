@@ -4,7 +4,7 @@ rm -rf build
 mkdir -p build
 cd build
 echo '解压axel源码...'
-tar -xzvf ../axel-2.5.tar.gz
+tar -xzf ../axel-2.5.tar.gz
 axel=axel-2.5
 patch=../axel-patch
 echo '开始修补源码..'
@@ -20,6 +20,7 @@ make
 echo '清理临时目录...'
 cp axel ../../
 cd ../../
+rm -rf screenshot
 rm -rf build
 rm -rf axel-patch
 rm axel-2.5.tar.gz
