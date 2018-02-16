@@ -44,4 +44,6 @@ PS: 下载过程中可以关闭浏览器, 但不要关闭终端窗口
 
 由于当前版本不支持自动解析百度云直链文件名, 需要手动设置文件名
 
-PS: 建议在"设置"中
+默认下载目录为当前用户的家目录, 如需永久更改请使用"设置"按钮进行更改, "新建"界面设置下载目录仅对当前任务生效
+
+![dlinux](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/dlinux.jpg)
