@@ -5,9 +5,9 @@
 ![preview](screenshot/preview.jpg)  
 ## 使用方法
 
-[macOS教程](.MD/macOS.md)  
-[linux/Unix教程](.MD/*nix.md)  
-[Windows教程](.MD/win.md)
+[macOS版教程](.MD/macOS.md)  
+[linux/Unix版教程](.MD/*nix.md)  
+[Windows测试版说明](.MD/win.md)
 
 ## 打赏
 <div>
