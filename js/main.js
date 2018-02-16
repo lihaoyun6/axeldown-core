@@ -443,6 +443,11 @@ function rconfig() {
         $("input[id="+key+"]").attr("checked",val);
         $('#' + key + "1").val(val);
         $("input[id="+key+"1]").attr("checked",val);
+          if (key == 'user_agent') {
+            if (!val) {
+              $('#user_agent1').val(navigator.userAgent);
+          }
+        }
  　　});   
   });
 }
