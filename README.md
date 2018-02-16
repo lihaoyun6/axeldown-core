@@ -5,8 +5,8 @@
 ## 使用方法
 
 [macOS教程](.MD/macOS.md)  
-[linux/Unix教程](.MD/*nix.md)  
-Windows教程 敬请期待 
+[linux/Unix教程](.MD/*nix.md)  
+[Windows教程](.MD/win.md) 
 
 ## 打赏
 <div>
