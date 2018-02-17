@@ -18,13 +18,13 @@
 
 点击"Axel下载"按钮会展开一个对话框  
 
-![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdurl.jpg)  
-
 "发送到Axeldown下载"按钮会将解析出的链接发送至指定的下载服务器端口, 可以设置当前任务使用的线程数量  
 
-![axconf](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdconf.jpg)  
+![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdurl.jpg)  
 
 通过"AX-下载">"下载设置"可以自定义Axeldown服务器地址和端口以及默认下载线程数(默认为http://127.0.0.1:2333).  
+
+![axconf](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdconf.jpg)  
 
 ````
 •发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.    
