@@ -16,7 +16,7 @@
 •"普通下载"是使用浏览器来下载文件, 速度很慢不建议使用
 ````
 
-"Axel下载"按钮会展开一个对话框  
+点击"Axel下载"按钮会展开一个对话框  
 
 ![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdurl.jpg)  
 
