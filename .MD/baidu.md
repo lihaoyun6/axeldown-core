@@ -8,7 +8,7 @@
 
 ## 使用脚本  
 
-安装好插件和脚本后, 再打开百度云分享链接网页, 会看到页面上多了一个按钮  
+安装好插件和脚本后, 再打开百度云分享链接网页, 会看到页面上多了一个"AX-下载"按钮  
 
 ![axmain](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdmain.jpg)  
 
