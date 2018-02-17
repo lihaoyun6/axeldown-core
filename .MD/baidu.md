@@ -20,7 +20,7 @@
 
 ![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdurl.jpg)  
 
-"复制链接并用Axeldown下载"按钮会将解析出的链接发送至指定的下载服务器端口, 可以设置当前任务使用的线程数量  
+"发送到Axeldown下载"按钮会将解析出的链接发送至指定的下载服务器端口, 可以设置当前任务使用的线程数量  
 
 ![axconf](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdset.jpg)  
 
