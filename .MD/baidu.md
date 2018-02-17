@@ -10,20 +10,23 @@
 
 安装好插件和脚本后, 再打开百度云分享链接网页, 会看到页面上多了一个按钮  
 
-![axmain](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axmain.jpg)  
+![axmain](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdmain.jpg)  
 
-"普通下载"是使用浏览器来下载文件, 速度很慢, 不建议使用
+````
+•"普通下载"是使用浏览器来下载文件, 速度很慢不建议使用
+````
 
 "Axel下载"按钮会展开一个对话框  
 
-![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdown.jpg)  
+![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdurl.jpg)  
 
-"复制链接并用Axeldown下载"按钮会将解析出的链接发送至剪贴板, 并向9998端口发送下载请求  
+"复制链接并用Axeldown下载"按钮会将解析出的链接发送至指定的下载服务器端口, 可以设置当前任务使用的线程数量  
+
+![axconf](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdset.jpg)  
+
+通过"AX-下载">"下载设置"可以自定义Axeldown服务器地址和端口以及默认下载线程数(默认为http://127.0.0.1:9998).  
 
 ````
-•发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.  
-•此功能暂时不太成熟, 无法自动解析文件名, 所以不太建议点击此按钮, 而是建议直接全选并复制框内的链接.  
-•另外建议启动Axeldown时请避开9998端口, 此端口是我为调试预留的, 可能会有很多实验性功能指向此端口.  
+•发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.    
+•脚本支持自动解析单选/多选模式下的文件名, 以及单选/多选模式下的文件夹打包文件名, 无需手动指定下载文件名.  
 ````
-
-将复制后的下载地址粘贴到Axeldown控制面板的新建任务界面, 然后按照步骤设置参数进行下载即可
