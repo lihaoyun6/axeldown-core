@@ -21,3 +21,7 @@
 然后在浏览器中打开"<http://127.0.0.1:端口>"即可看到管理界面  
 
 ![dwin](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/dwin.jpg)
+
+## 下载百度云文件
+
+首先保证下载服务已经开启, 然后[点此](baidu.md)查看百度云下载任务导出教程    
