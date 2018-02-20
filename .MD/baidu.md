@@ -31,6 +31,7 @@
 ![axconf](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdconf.jpg)  
 
 ````
-•发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.    
+•暂时不支持下载自己的百度云文件管理界面导出的链接, 只支持分享出来的文件.
+•发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.    
 •脚本支持自动解析单选/多选模式下的文件名, 以及单选/多选模式下的文件夹打包文件名, 无需手动指定下载文件名.  
 ````
