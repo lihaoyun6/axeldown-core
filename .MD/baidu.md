@@ -22,6 +22,10 @@
 
 ![axdown](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdurl.jpg)  
 
+发送下载任务需要授予跨站访问权限, 弹出此窗口时, 请点击"允许域名"即可  
+
+![xss](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/xss.jpg)  
+
 通过"AX-下载">"下载设置"可以自定义Axeldown服务器地址和端口以及默认下载线程数(默认为http://127.0.0.1:2333).  
 
 ![axconf](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/axdconf.jpg)  
