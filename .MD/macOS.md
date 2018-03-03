@@ -21,3 +21,9 @@
 ## 下载百度云文件
 
 首先保证下载服务已经开启, 然后[点此](baidu.md)查看百度云下载任务导出教程    
+
+## 打赏
+<div>
+<img src="../donate/alipay.png" width = "200" alt="支付宝" align=center />
+<img src="../donate/wechatpay.png" width = "200" alt="微信" align=center />
+</div>
