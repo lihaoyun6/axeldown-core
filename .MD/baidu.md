@@ -35,3 +35,8 @@
 •发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.    
 •脚本支持自动解析单选/多选模式下的文件名, 以及单选/多选模式下的文件夹打包文件名, 无需手动指定下载文件名.  
 ````
+## 打赏
+<div>
+<img src="../donate/alipay.png" width = "200" alt="支付宝" align=center />
+<img src="../donate/wechatpay.png" width = "200" alt="微信" align=center />
+</div>
