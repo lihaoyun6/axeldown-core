@@ -15,7 +15,7 @@
 ![admenu](https://github.com/lihaoyun6/axeldown-core/blob/master/screenshot/admenu.jpg)
 
 ````
-•如果首次启动时界面一片空白, 可以右键单击Axeldown的菜单栏图标, 即可推出程序, 再次启动应该就没问题了
+•如果首次启动时界面一片空白, 可以右键单击Axeldown的菜单栏图标, 即可退出程序, 再次启动应该就没问题了
 ````
 
 默认下载到当前用户的"下载"文件夹, 如需永久更改请使用"设置"按钮进行更改, "新建"界面设置下载目录仅对当前任务生效  
