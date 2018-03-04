@@ -41,7 +41,7 @@
 
 通过多选方式打包下载的文件, 如果大小超过4G, 很有可能导致无法正常解压.  
 
-macOS平台可以点击管理界面中的"设置">"修复解压"并选择要解压的打包zip文件来进行解压 
+macOS平台可以点击Axeldown管理界面中的"设置">"修复解压"并选择要解压的打包zip文件来进行解压 
 
 Linux以及Unix平台可以使用[此项目](https://github.com/ccloli/baidupan-zip-extract)来修复并解压此种特殊zip文件(需nodejs环境)  
 
