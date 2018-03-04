@@ -36,6 +36,15 @@
 •发送下载任务需要保证Axeldown服务已经开启, 并同意脚本的跨站请求.    
 •脚本支持自动解析单选/多选模式下的文件名, 以及单选/多选模式下的文件夹打包文件名, 无需手动指定下载文件名.  
 ````
+
+## 修复解压  
+
+通过多选方式打包下载的文件, 如果大小超过4G, 很有可能导致无法正常解压.  
+
+macOS平台可以点击管理界面中的"设置">"修复解压"并选择要解压的打包zip文件来进行解压 
+
+Linux以及Unix平台可以使用[此项目](https://github.com/ccloli/baidupan-zip-extract)来修复并解压此种特殊zip文件(需nodejs环境)  
+
 ## 打赏
 <div>
 <img src="../donate/alipay.png" width = "200" alt="支付宝" align=center />
