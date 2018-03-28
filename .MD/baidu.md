@@ -15,7 +15,7 @@
 ![axmain](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/axdmain2.jpg)  
 
 ````
-•"普通下载"是使用浏览器来下载文件, 速度很慢不建议使用
+•"AX-压缩下载"可以在一定程度上绕过百度云的10KB限速, 但是不建议经常使用
 ````
 
 点击"Axel下载"按钮会展开一个对话框  
