@@ -1,6 +1,6 @@
 ## 下载安装:
 
-[点此](https://github.com/lihaoyun6/axeldown-core/releases)前往并下载最新版本的Axeldown
+[点此前往](https://github.com/lihaoyun6/axeldown-core/releases/latest)并下载最新版本的Axeldown
 
 ## 启动运行:
 
