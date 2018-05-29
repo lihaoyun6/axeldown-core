@@ -2,7 +2,7 @@
 
 ## 安装插件与脚本  
 
-[点此](http://tampermonkey.net)前往浏览器插件安装页面  
+[点此](http://tampermonkey.net)前往浏览器插件安装页面\(Chrome用户[点此](https://raw.githubusercontent.com/lihaoyun6/web/master/Tampermonkey_v4.6.crx)免翻墙下载\)  
 
 [点此](https://greasyfork.org/zh-CN/scripts/38418-ax-百度云盘)前往用户脚本下载页面  
 
