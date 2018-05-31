@@ -15,10 +15,10 @@
 ![axmain](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/axdmain2.jpg)  
 
 ````
-•"AX-压缩下载"可以在一定程度上绕过百度云的10KB限速, 但是不建议经常使用
+•"AX-压缩下载"仅作为另一种链接提取方式的保留选项, 一般用户可以无视
 ````
 
-点击"Axel下载"按钮会展开一个对话框  
+点击"AX-下载"按钮会展开一个对话框  
 
 "发送到Axeldown下载"按钮会将解析出的链接发送至指定的下载服务器端口, 可以设置当前任务使用的线程数量  
 
