@@ -26,4 +26,4 @@
 
 ![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s6.png)
 
-至此浏览器油猴插件安装完成, [点击此处](../baidu.md)返回百度云导出教程
+至此浏览器用户脚本安装完成, [点击此处](../baidu.md)返回百度云导出教程
