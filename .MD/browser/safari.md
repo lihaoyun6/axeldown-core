@@ -1,0 +1,29 @@
+## Safari浏览器安装插件
+
+1. [点击此处](http://tampermonkey.net)打开油猴插件官网, 并点击图中所示按钮下载插件  
+
+![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s1.png)
+
+2. 双击打开下载好的插件文件  
+
+![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s2.png)
+
+3. 待Safari弹出提示框后点击"信任"  
+
+![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s3.png)
+
+至此浏览器油猴插件安装完成  
+
+![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s4.png)
+
+## Safari浏览器安装用户脚本
+
+1. [点击此处](https://greasyfork.org/zh-CN/scripts/38418-ax-百度云盘)打开脚本安装页面, 并点击图中所示按钮安装脚本  
+
+![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s5.png)
+
+2. 待弹出安装页面时, 点击"安装"
+
+![tamp](https://github.com/lihaoyun6/ax-baiduyunpan/blob/master/screenshot/s6.png)
+
+至此浏览器油猴插件安装完成, [点击此处](../baidu.md)返回百度云导出教程
